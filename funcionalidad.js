@@ -25,6 +25,11 @@ function  Calculadora(numA, numB){
 		}
 		return cociente;
 	}
+	this.elevar=function(){
+		var num=Math.pow(numA,numB);
+		alert(num);
+		return num;
+	}
 }
 
 
@@ -44,6 +49,10 @@ function operar(){
 			}else{
 				if (operando=='dividir') {
 					var restar=cal.dividir();
+				}else{
+					if (operando=='pow') {
+					var restar=cal.elevar();
+					}
 				}
 			}
 		}
